@@ -1,0 +1,25 @@
+{
+  "name": "circuitverse-ai",
+  "version": "1.0.0",
+  "description": "Smart ENTC Learning & Innovation Platform — Learn Circuits. Simulate Ideas. Build Intelligence.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test_runner.js",
+    "test:features": "node verify_core_features.js",
+    "test:memory": "node test_in_memory.js"
+  },
+  "keywords": [
+    "entc",
+    "electronics",
+    "telecommunications",
+    "simulation",
+    "logic-gates",
+    "arduino",
+    "iot",
+    "ai",
+    "quiz"
+  ],
+  "author": "CircuitVerse AI Team",
+  "license": "MIT"
+}

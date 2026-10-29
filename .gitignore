@@ -1,0 +1,16 @@
+# Logs
+*.log
+server.log
+server-err.log
+
+# Node dependencies
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables
+.env
+.env.local

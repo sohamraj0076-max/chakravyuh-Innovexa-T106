@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIRCUITVERSE AI — Smart ENTC Learning & Innovation Platform</title>
+  <meta name="description" content="Learn Circuits. Simulate Ideas. Build Intelligence. Smart ENTC learning platform connecting theoretical concepts with practical simulations and AI assistance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2306b6d4'><rect x='4' y='4' width='16' height='16' rx='2'/><circle cx='12' cy='12' r='3' fill='%23fff'/></svg>">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="app-sidebar">
+      <!-- Brand & Circuit Logo -->
+      <div class="brand">
+        <div class="brand-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <rect x="9" y="9" width="6" height="6"></rect>
+            <line x1="9" y1="1" x2="9" y2="4"></line>
+            <line x1="15" y1="1" x2="15" y2="4"></line>
+            <line x1="9" y1="20" x2="9" y2="23"></line>
+            <line x1="15" y1="20" x2="15" y2="23"></line>
+            <line x1="20" y1="9" x2="23" y2="9"></line>
+            <line x1="20" y1="14" x2="23" y2="14"></line>
+            <line x1="1" y1="9" x2="4" y2="9"></line>
+            <line x1="1" y1="14" x2="4" y2="14"></line>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>CIRCUITVERSE</h1>
+          <span class="brand-badge">ENTC · AI Core</span>
+        </div>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <div class="nav-section-label">Main Platform</div>
+        
+        <a class="nav-item active" data-view="dashboard" onclick="window.router.navigate('dashboard')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <rect x="3" y="3" width="7" height="9"></rect>
+            <rect x="14" y="3" width="7" height="5"></rect>
+            <rect x="14" y="12" width="7" height="9"></rect>
+            <rect x="3" y="16" width="7" height="5"></rect>
+          </svg>
+          Dashboard
+        </a>
+
+        <a class="nav-item" data-view="learning" onclick="window.router.navigate('learning')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          Interactive Learning
+          <span class="nav-pill">6 Modules</span>
+        </a>
+
+        <div class="nav-section-label">Laboratories & Simulators</div>
+
+        <a class="nav-item" data-view="lab" onclick="window.router.navigate('lab')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          Virtual Electronics Lab
+        </a>
+
+        <a class="nav-item" data-view="coding" onclick="window.router.navigate('coding')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          Arduino Coding Lab
+        </a>
+
+        <a class="nav-item" data-view="iot" onclick="window.router.navigate('iot')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          IoT Smart Simulator
+        </a>
+
+        <div class="nav-section-label">Evaluation & Intelligence</div>
+
+        <a class="nav-item" data-view="quiz" onclick="window.router.navigate('quiz')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polygon points="10 8 16 12 10 16 10 8"></polygon>
+          </svg>
+          Smart Quiz Arena
+        </a>
+
+        <a class="nav-item" data-view="ai" onclick="window.router.navigate('ai')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          AI Learning Assistant
+        </a>
+
+        <a class="nav-item" data-view="progress" onclick="window.router.navigate('progress')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <circle cx="12" cy="8" r="7"></circle>
+            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+          </svg>
+          Progress & Badges
+        </a>
+      </nav>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer">
+        <div class="user-status-card">
+          <div class="user-avatar" id="sidebar-user-avatar">E</div>
+          <div class="user-info">
+            <div class="user-name" id="sidebar-user-name">ENTC Innovator</div>
+            <div class="user-rank" id="sidebar-user-rank">⚡ Novice Wireman</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Mobile Navigation Backdrop -->
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+    <!-- Main Content Area -->
+    <main class="main-wrapper">
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="menu-toggle-btn" id="btn-menu-toggle" aria-label="Toggle navigation">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="page-title-box">
+            <h2 id="topbar-title">CircuitVerse AI Dashboard</h2>
+            <div class="page-subtitle" id="topbar-subtitle">Learn Circuits. Simulate Ideas. Build Intelligence.</div>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <div class="stat-chip live-status">
+            <span class="live-dot"></span>
+            <span>SQLite Online</span>
+          </div>
+
+          <div class="stat-chip xp">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span id="topbar-xp">0 XP</span>
+          </div>
+
+          <div class="stat-chip level">
+            <span id="topbar-level">Lvl 1</span>
+          </div>
+
+          <button class="btn-icon-toggle" id="btn-sound-toggle" title="Toggle tactile audio effects">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- View Containers Body -->
+      <div class="content-body">
+        <section id="view-dashboard" class="view-section active"></section>
+        <section id="view-learning" class="view-section"></section>
+        <section id="view-lab" class="view-section"></section>
+        <section id="view-ai" class="view-section"></section>
+        <section id="view-quiz" class="view-section"></section>
+        <section id="view-coding" class="view-section"></section>
+        <section id="view-iot" class="view-section"></section>
+        <section id="view-progress" class="view-section"></section>
+      </div>
+    </main>
+  </div>
+
+  <!-- Global Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/audio.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/modules/dashboard.js"></script>
+  <script src="js/modules/learning.js"></script>
+  <script src="js/modules/lab.js"></script>
+  <script src="js/modules/ai-assistant.js"></script>
+  <script src="js/modules/quiz.js"></script>
+  <script src="js/modules/coding.js"></script>
+  <script src="js/modules/iot.js"></script>
+  <script src="js/modules/progress.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
